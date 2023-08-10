@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="Recommendation.css"/>
+    <script src="Recommendation.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Anteneh Tamrat
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Anteneh Tamrat! <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f60e.png" width="60px"/>
+          </h1>
+          <p>
+            I am a seasoned Full Stack Developer with a passion for crafting dynamic and innovative web applications. 
+            With a strong foundation in both front-end and back-end technologies, I thrive in creating seamless user experiences through intuitive interfaces and robust server-side functionalities. 
+            My expertise spans across a diverse range of programming languages, databases, and frameworks, enabling me to architect and implement end-to-end solutions that drive user engagement and business success. 
+            Whether it's designing responsive user interfaces or optimizing database performance, I am dedicated to delivering high-quality code and pushing the boundaries of what the web can achieve.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div> 
+        
+        <div class="skill">
+            <img src="https://www.codespot.org/assets/css.jpg"/>
+            <h6>CSS</h6>
+            <p>2 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="https://wolfpaulus.com/wp-content/uploads/2016/12/jsonlogo.png"/>
+            <h6>JSON</h6>
+            <p>2 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"/>
+            <h6>SQL</h6>
+            <p>2 years experience</p>
+          </div> 
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Project AutoBot</h3>
+            <ul>
+              <li>Designed and built a secure website for an automotive client, seamlessly incorporating a chatbot powered by IBM Watson Assistant. Utilized HTML, CSS, and JavaScript to create a robust and user-friendly interface that ensures a safe and engaging online experience.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sentiment360</h3>
+            <ul>
+              <li>Created and implemented a sentiment analysis tool within an eCommerce platform's review section, harnessing the capabilities of IBM NLU. This enhancement enables comprehensive analysis of customer sentiments, enriching the user experience and contributing to informed purchasing decisions.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>FashionCart Fusion</h3>
+            <ul>
+              <li>Crafted a visually appealing and multi-page website for an emerging fashion brand, seamlessly incorporating a shopping cart feature complete with Stripe integration for secure and seamless payment processing.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Anteneh excels in rapid learning, swiftly mastering crucial web development concepts. 
+          Her positive attitude, teamwork, inquisitive nature, and leadership potential make her a standout contributor."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Collaborating with Jane has been truly remarkable. 
+          Her deep expertise, meticulousness, and dedication to excellence are unparalleled. 
+          I eagerly look forward to future projects together."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "I partnered with Jane in our venture's web development startup. 
+          Her unwavering commitment and profound domain expertise make her an invaluable asset to any organization."
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Write somthing</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
